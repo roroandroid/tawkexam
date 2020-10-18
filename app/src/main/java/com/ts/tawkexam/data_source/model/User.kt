@@ -10,7 +10,7 @@ import java.io.Serializable
 @Parcelize
 @Entity
 data class User (
-    @SerializedName("room_id") @PrimaryKey(autoGenerate = true) val roomId: Int,
+    @PrimaryKey(autoGenerate = true) val roomId: Int,
     @SerializedName("id") val id: Int,
     @SerializedName("login")  val login: String? = null,
     @SerializedName("node_id")  val nodeId: String? = null,

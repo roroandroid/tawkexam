@@ -10,17 +10,17 @@ class UserTest {
 
     @Test(expected = IllegalArgumentException::class)
     fun createUserWithNegativeId_ReturnException(){
-        val user = User(id = -1)
+        val user = User(roomId = -1, id = -1)
     }
 
     @Test(expected = IllegalArgumentException::class)
     fun createUserWithZeroId_ReturnException(){
-        val user = User(id = 0)
+        val user = User(roomId = 1, id = 0)
 
     }
 
     @Test(expected = IllegalArgumentException::class)
     fun createUserWithNullLogin_ReturnException(){
-        val user = User(id = 2, login = null)
+        val user = User(roomId = 1, id = 2, login = null)
     }
 }

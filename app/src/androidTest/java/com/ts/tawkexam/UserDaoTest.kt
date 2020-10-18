@@ -38,12 +38,12 @@ class UserDaoTest {
         userDao = db.userDao()
 
         userList = listOf(
-            User(id = 1, name = "One", login = "OneLogin", note = "First Note"),
-            User(id = 2, name = "Two", login = "TwoLogin"),
-            User(id = 3, name = "Three", login = "ThreeLogin", note = "Third Note"),
-            User(id = 4, name = "Four", login = "FourLogin"),
-            User(id = 5, name = "Five", login = "FiveLogin", note = "ZeroOneTwoThreeFour"),
-            User(id = 6, name = "Six", login = "SixLogin", note = "Sixth Note")
+            User(roomId = 1,id = 1, name = "One", login = "OneLogin", note = "First Note"),
+            User(roomId = 2,id = 2, name = "Two", login = "TwoLogin"),
+            User(roomId= 3,id = 3, name = "Three", login = "ThreeLogin", note = "Third Note"),
+            User(roomId= 4,id = 4, name = "Four", login = "FourLogin"),
+            User(roomId= 5,id = 5, name = "Five", login = "FiveLogin", note = "ZeroOneTwoThreeFour"),
+            User(roomId= 6,id = 6, name = "Six", login = "SixLogin", note = "Sixth Note")
         )
 
         userDao.upsertAll(userList)
@@ -61,9 +61,9 @@ class UserDaoTest {
     fun insertUsers_ifUsersInserted_returnListOfUsers() {
         //Given
         val givenUserList = listOf(
-            User(id = 7, login = "SevenLogin", name = "Seven"),
-            User(id = 8, login = "EightLogin", name = "Eight"),
-            User(id = 9, login = "NineLogin", name = "Nine")
+            User(roomId= 7, id = 7, login = "SevenLogin", name = "Seven"),
+            User(roomId= 8, id = 8, login = "EightLogin", name = "Eight"),
+            User(roomId= 9, id = 9, login = "NineLogin", name = "Nine")
         )
         //When
         userDao.upsertAll(givenUserList)
