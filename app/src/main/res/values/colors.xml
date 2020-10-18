@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="edit_text_hint">#B6B6B4</color>
+    <color name="item_name">#625D5D</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="shimmer">#DDDDDD</color>
+    <color name="btn_retry">#38ACEC</color>
+    <color name="btn_retry_pressed">#157DEC</color>
+    <color name="item_bio">#B6B6B4</color>
+    <color name="et_note_bg">#FFFFFF</color>
+    <color name="et_note_text">#837E7C</color>
+    <color name="btn_save">#736F6E</color>
+    <color name="btn_save_enabled">#38ACEC</color>
+    <color name="btn_save_pressed">#1589FF</color>
+    <color name="et_search_bg_stroke">#565051</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="profile_bg">#25383C</color>
+    <color name="et_note_bg_dark">#B6B6B4</color>
+    <color name="et_note_text_dark">#FFFFFF</color>
+    <color name="et_search_bg">#FFFFFF</color>
+    <color name="something_went_wrong_page_bg">#FFFFFF</color>
+</resources>

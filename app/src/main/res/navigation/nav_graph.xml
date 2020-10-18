@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/userListView">
+
+    <fragment
+        android:id="@+id/userListView"
+        android:name="com.ts.tawkexam.ui.user_list.main.UserListView"
+        android:label="UserListView" >
+        <action
+            android:id="@+id/action_userListView_to_profileView"
+            app:destination="@id/profileView" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileView"
+        android:name="com.ts.tawkexam.ui.profile.ProfileView"
+        android:label="ProfileView" >
+        <argument
+            android:name="user"
+            app:argType="com.ts.tawkexam.data_source.model.User" />
+    </fragment>
+</navigation>
